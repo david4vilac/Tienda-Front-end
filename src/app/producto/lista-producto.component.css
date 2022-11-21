@@ -1,0 +1,246 @@
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: rgb(95, 94, 94);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+    min-width: 612px;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1.6rem
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0px auto;
+}
+
+.header {
+    background: rgba(228, 69, 6, 0.87);
+    color: white;
+    clear: both;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 0rem 0;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 10px;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background: rgb(228, 32, 32);
+}
+
+main {
+    padding-top: 2rem;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+img {
+    max-width: 250px;
+}
+
+.poke-card {
+   
+    padding: 0 auto;
+    font-family: gameboy;
+    height: fit-content;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000000;
+    text-align: center;
+    border: 1px solid #000000;
+    
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section figcaption {
+    text-align: center;
+}
+
+
+/*CARTAS*/
+
+
+
+.container-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 85%;
+}
+
+.container-main .card {
+    margin-top: 20px;
+    width: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    display: inline-block;
+    padding:5px;
+    box-sizing: border-box;
+    background-color: #2A2A2A;
+
+}
+
+.container-main .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-main .card img {
+    height: 230px;
+    margin-bottom: 20px;
+
+}
+
+.container-main .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.container-main .card h4,
+p {
+    font-weight: 600;
+    color: #000000;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.social figure {
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.icon {
+    font-size: center;
+    width: 60px;
+}
+
+.electrico span {
+    background: yellow;
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px;
+
+}
+
+.veneno{
+    background: rgb(189, 12, 233);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px;
+
+}
+
+.fuego{
+    background: rgb(221, 116, 18);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px;
+
+}
+
+.planta{
+    background: rgb(20, 226, 37);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px;
+
+}
+
+.volador{
+    background: rgb(152, 225, 235);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px;
+
+}
+
+.normal{
+    background: rgb(79, 89, 90);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px; 
+}
+
+.hada{
+    background: rgb(231, 166, 231);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px; 
+}
+.tierra{
+    background: rgb(231, 164, 18);
+    text-shadow: 1px 1px rgb(15, 15, 15);
+    border-radius: 5px; 
+}
+
+.icon:hover {
+    background-color: rgba(247, 213, 199, 0.87);;
+    border-radius: 10px; 
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}

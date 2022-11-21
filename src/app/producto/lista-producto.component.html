@@ -1,0 +1,15 @@
+<h1 style="margin-top:30px; font-size: 40px; font-family: 'Press Start 2P', cursive; color: #FFFFFF;">DESTACADOS</h1>
+<main>
+  <div class="container-main">
+    <div class="card" *ngFor="let producto of productos" routerLink="/detalle/{{producto.id}}">
+      <h4>{{producto.id}}</h4>
+      <p><span class="veneno">{{producto.nombre}}</span></p>
+      <p>COP$ <span class="planta">{{producto.precio}}</span></p>
+      <img src="{{producto.image}}">
+      <p>prueba imagen <span class="planta">{{producto.image}}</span></p>
+      <button class="btn btn-outline-primary" style="margin: 10px;" routerLink="/editar/{{producto.id}}"><i class="far fa-edit"></i> Editar</button>
+      <button class="btn btn-outline-danger" (click)="borrar(producto.id!)"><i class="far fa-trash-alt"></i> Eliminar</button>
+    </div>
+  </div>
+</main>
+
